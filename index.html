@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberStars — Akatsuki</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="showcase" id="showcase">
+    <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+
+    <div class="layer background-buildings"></div>
+    <div class="layer ambient-lights"></div>
+    <div class="layer dark-vignette"></div>
+    <div class="layer scene-fog"></div>
+
+    <header class="topbar">
+      <div class="brand-mark">
+        <span>CYBER</span>
+        <span>STARS</span>
+      </div>
+    </header>
+
+    <section class="copy-panel" aria-labelledby="heroName">
+      <h1 id="heroName">Sentinela Nebular</h1>
+      <h2 id="heroSubtitle">O Estrategista das Trilhas</h2>
+
+      <p class="hero-description" id="heroDescription">
+        A Sentinela Nebular observa, planeja e escolhe o melhor caminho.
+        Sua força está no foco, na estratégia e na clareza para avançar
+        com propósito em cada etapa da jornada.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-outline" href="https://drive.google.com/drive/folders/1YyborC1o2bCW8PkUexd6vfRqHRxWPEaV?usp=sharing" target="_blank" rel="noopener noreferrer">Acessar Trilha Educacional</a>      
+      </div>
+
+      <ul class="meta-list">
+        <li><span>✦</span><strong>Tipo de Jornada:</strong> <em id="metaType">Estratégia + Foco</em></li>
+        <li><span>✦</span><strong>Classe Base:</strong> <em id="metaBase">Planejamento</em></li>
+        <li><span>✦</span><strong>Atributo Principal:</strong> <em id="metaMain">Visão</em></li>
+      </ul>
+    </section>
+
+    <section class="character-stage" aria-label="Personagem em destaque">
+      <div class="character-aura"></div>
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <img
+        id="heroImage"
+        class="hero-image"
+        src="assets/sentinela-nebular.png"
+        alt="Sentinela Nebular"
+      />
+      <div class="character-floor-glow"></div>
+      <div class="character-floor-smoke"></div>
+    </section>
+
+    <section class="thumb-rail" aria-label="Seleção de personagens">
+      <button class="thumb-card is-active" type="button" data-slide="0">
+        <img src="assets/sentinela-nebular.png" alt="" />
+        <div class="thumb-card-overlay"></div>
+        <div class="thumb-card-content">
+          <span>I</span>
+          <strong>Sentinela Nebular</strong>
+          <small>Estratégia e foco</small>
+        </div>
+      </button>
+
+      <button class="thumb-card" type="button" data-slide="1">
+        <img src="assets/guardiao-carmesim.png" alt="" />
+        <div class="thumb-card-overlay"></div>
+        <div class="thumb-card-content">
+          <span>II</span>
+          <strong>Guardião Carmesim</strong>
+          <small>Disciplina e execução</small>
+        </div>
+      </button>
+
+      <button class="thumb-card" type="button" data-slide="2">
+        <img src="assets/oraculo-nebulosa.png" alt="" />
+        <div class="thumb-card-overlay"></div>
+        <div class="thumb-card-content">
+          <span>III</span>
+          <strong>Oráculo da Nebulosa</strong>
+          <small>Criatividade e visão</small>
+        </div>
+      </button>
+    </section>
+
+    <nav class="footer-nav" aria-label="Navegação do showcase">
+      <div class="nav-arrows">
+        <button id="prevSlide" type="button" aria-label="Anterior">‹</button>
+        <button id="nextSlide" type="button" aria-label="Próximo">›</button>
+      </div>
+
+      <div class="progress-track" aria-hidden="true">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <div class="roman-index" id="romanIndex">I</div>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
