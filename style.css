@@ -712,3 +712,113 @@ button {
 .meta-list {
   display: none !important;
 }
+/* =========================================================
+   AJUSTE RESPONSIVO — EVITA BOTÃO SOBRE OS PERSONAGENS
+   ========================================================= */
+@media (max-width: 980px) {
+  .topbar {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    padding: 1.8rem 1.25rem 0 !important;
+  }
+
+  .copy-panel {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: auto !important;
+    padding: 2rem 1.25rem 0 !important;
+  }
+
+  .hero-actions {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .character-stage {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin-top: 0.75rem !important;
+  }
+}
+
+/* =========================================================
+   AJUSTE RESPONSIVO — BOTÃO ABAIXO DO PERSONAGEM E DA SELEÇÃO
+   ========================================================= */
+@media (max-width: 980px) {
+  .showcase {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+    height: auto !important;
+    overflow: hidden !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .topbar {
+    order: 1 !important;
+  }
+
+  .copy-panel {
+    display: contents !important;
+  }
+
+  .copy-panel h1 {
+    order: 2 !important;
+    padding: 2rem 1.25rem 0 !important;
+  }
+
+  .copy-panel h2 {
+    order: 3 !important;
+    padding: 0 1.25rem !important;
+  }
+
+  .hero-description {
+    order: 4 !important;
+    padding: 0 1.25rem !important;
+    max-width: 38rem !important;
+  }
+
+  .character-stage {
+    order: 5 !important;
+    width: 100% !important;
+    height: 30rem !important;
+    margin-top: 0.25rem !important;
+  }
+
+  .thumb-rail {
+    order: 6 !important;
+    display: flex !important;
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    padding: 0 1.25rem !important;
+    margin-top: -0.75rem !important;
+    overflow-x: auto !important;
+  }
+
+  .hero-actions {
+    order: 7 !important;
+    width: 100% !important;
+    padding: 1.25rem 1.25rem 0 !important;
+    margin: 0 !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .footer-nav {
+    order: 8 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .character-stage {
+    height: 26rem !important;
+  }
+}
